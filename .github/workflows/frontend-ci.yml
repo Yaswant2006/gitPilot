@@ -16,6 +16,9 @@ concurrency:  # it cancels the older run when a new push arrives on the same bra
   group: frontend-ci-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest

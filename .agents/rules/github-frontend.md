@@ -1,0 +1,11 @@
+# GitPilot frontend rules
+- The frontend is in /frontend (Next.js, Tailwind, shadcn/ui), running on http://localhost:3000. The backend runs on http://localhost:8080 and I start it myself.
+- I am not a frontend developer. Explain every change in plain English and keep each task small.
+- Change only styling and layout unless I say otherwise. Do NOT edit lib/api.ts, lib/stream-chat.ts, hooks/, proxy.ts or app/auth/callback/page.tsx.
+- Never read, print or commit secrets, .env files or application.properties values.
+- Never ask me for my GitHub password or 2FA codes. If login is needed, stop and tell me to log in myself in the browser window.
+- Only browse http://localhost:3000. Do not open any other website.
+- The product name is GitPilot. Never use any other name.
+- Before finishing, these must pass: npx tsc --noEmit, npm run lint, npm run build.
+- Do not add new dependencies without explaining why.
+- Do not commit or push. I will do that myself.
